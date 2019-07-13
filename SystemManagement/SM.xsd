@@ -1,0 +1,108 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SM" targetNamespace="http://www.tempuri.org/SM.xsd" xmlns:mstns="http://www.tempuri.org/SM.xsd" xmlns="http://www.tempuri.org/SM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="SM" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="权限模块">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="权限模块名" type="xs:string" minOccurs="0" />
+                            <xs:element name="类别" type="xs:int" default="2" minOccurs="0" />
+                            <xs:element name="菜单级别" type="xs:int" minOccurs="0" />
+                            <xs:element name="菜单项目ID" type="xs:int" minOccurs="0" />
+                            <xs:element name="链接地址" type="xs:string" minOccurs="0" />
+                            <xs:element name="备注" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="权限类别">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="Type" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="菜单">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="item" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="角色">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="角色名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="角色描述" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="用户信息">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="用户名" type="xs:string" />
+                            <xs:element name="姓名" type="xs:string" />
+                            <xs:element name="性别" type="xs:string" minOccurs="0" />
+                            <xs:element name="科室" type="xs:string" minOccurs="0" />
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="用户角色">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="false" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="用户ID" type="xs:int" minOccurs="0" />
+                            <xs:element name="用户角色" type="xs:int" nillable="true" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Role">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="role" type="xs:string" minOccurs="0" />
+                            <xs:element name="description" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:权限模块" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="权限类别_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:权限类别" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="菜单_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:菜单" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="角色1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:角色" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="key1">
+            <xs:selector xpath=".//mstns:用户信息" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="用户角色_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:用户角色" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="角色_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:Role" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:keyref name="用户信息用户角色" refer="key1">
+            <xs:selector xpath=".//mstns:用户角色" />
+            <xs:field xpath="mstns:用户ID" />
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
