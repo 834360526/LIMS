@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsMessage" targetNamespace="http://www.tempuri.org/dsMessage.xsd" xmlns:mstns="http://www.tempuri.org/dsMessage.xsd"
+	xmlns="http://www.tempuri.org/dsMessage.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsMessage" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="收件箱">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="标题" type="xs:string" minOccurs="0" />
+							<xs:element name="日期" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="发件人" type="xs:string" />
+							<xs:element name="已阅" type="xs:boolean" minOccurs="0" />
+							<xs:element name="收件人ID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

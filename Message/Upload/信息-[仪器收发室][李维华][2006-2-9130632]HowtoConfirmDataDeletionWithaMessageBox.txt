@@ -1,0 +1,27 @@
+var del=true;
+function UltraWebGrid1_KeyDownHandler(gridName, cellId, key){
+	// if user hits delete key set deleting 
+	// to false so confirm box is shown
+	if(key == 46)
+		deleting = false;
+	}
+	
+function UltraWebGrid1_AfterRowDeletedHandler(gridName, rowId){
+	// set deleting to true so when deleting 
+	// multiple rows confirm is shown only once
+	deleting=true;      
+	del=true;
+}
+
+function UltraWebGrid1_BeforeRowDeletedHandler(gridName, rowId){
+	if(!deleting) // used to determine if confirm box has shown yet
+	{
+		// show the confirm box
+		del = confirm("You sure you want to delete row(s)");
+		// set deleting to true so confirm is not shown again
+		deleting=true
+	}
+	// returning true cancels the event so return the opposite 
+	// of what the user selected in the confirm box
+	return !del;
+}
