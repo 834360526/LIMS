@@ -1,0 +1,13 @@
+
+SELECT ISNULL(证书数量.科室, 未通过审核证书数量.科室) AS 科室, CASE WHEN isnull(证书数量.数量, 0) 
+      = 0 THEN 0 ELSE 1 - 1.0 * isnull(未通过审核证书数量.数量, 0) / 证书数量.数量 END AS ccen
+FROM (SELECT COUNT(*) AS 数量, 检定科别 AS 科室
+        FROM (SELECT d未通过审核证书数量o.证书.*, d未通过审核证书数量o.检校任务.检定科别
+                FROM d未通过审核证书数量o.证书 INNER JOIN
+                      d未通过审核证书数量o.检校任务 ON d未通过审核证书数量o.证书.检校设备编号 = d未通过审核证书数量o.检校任务.编号) 
+              AS c
+        GROUP BY 检定科别) 证书数量 FULL OUTER JOIN
+        --此处添加distinct语句目的是为了统计证书的一次通过率，即如果证书第一次没通过，则以后如多次没通过都记为一次
+          (SELECT COUNT(DISTINCT 未通过审核证书.编号) AS 数量, 所属科室 AS 科室
+         FROM 未通过审核证书
+         GROUP BY 所属科室) 未通过审核证书数量 ON 证书数量.科室 = 未通过审核证书数量.科室

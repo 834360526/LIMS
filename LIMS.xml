@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LIMS</name>
+    </assembly>
+    <members>
+        <member name="T:LIMS.Base.BaseForm">
+            <summary>
+            所有页面的基类页面
+            </summary>
+        </member>
+        <member name="M:LIMS.Base.BaseForm.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Control.IndividualTree">
+            <summary>
+            	IndividualTree 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Control.IndividualTree.InitializeComponent">
+            <summary>
+            	设计器支持所需的方法 - 不要使用代码编辑器
+            	修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:LIMS.Control.IndividualTree.SelectedNodes">
+            <summary>
+            选择的所有人的ID
+            </summary>
+        </member>
+        <member name="T:LIMS.Control.LeftMenu">
+            <summary>
+            页面左边的菜单
+            </summary>
+        </member>
+        <member name="M:LIMS.Control.LeftMenu.GenerateMenu">
+            <summary>
+            生成菜单
+            </summary>
+        </member>
+        <member name="M:LIMS.Control.LeftMenu.InitializeComponent">
+            <summary>
+            	设计器支持所需的方法 - 不要使用代码编辑器
+            	修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Control.Login">
+            <summary>
+            	Login 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Control.Login.InitializeComponent">
+            <summary>
+            	设计器支持所需的方法 - 不要使用代码编辑器
+            	修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Control.OfficTree">
+            <summary>
+            	OfficTree 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Control.OfficTree.InitializeComponent">
+            <summary>
+            	设计器支持所需的方法 - 不要使用代码编辑器
+            	修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:LIMS.Control.OfficTree.SelectedNodes">
+            <summary>
+            返回所有科室的ID
+            </summary>
+        </member>
+        <member name="T:LIMS.Message.Inbox">
+            <summary>
+            Inbox 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Message.Inbox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Message.Outbox">
+            <summary>
+            Outbox 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Message.Outbox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:LIMS.Message.Outbox.NotSelected">
+            <summary>
+            没有选择收件人
+            </summary>
+        </member>
+        <member name="T:LIMS.Message.ShowMessage">
+            <summary>
+            ShowMessage 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Message.ShowMessage.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.User.Login">
+            <summary>
+            Login 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.User.Login.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Work.AcceptAssignment">
+            <summary>
+            AcceptAssignment 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Work.AcceptAssignment.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Work.InputProxy">
+            <summary>
+            InputProxy 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Work.InputProxy.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:LIMS.Work.InputProxy.Submit_Click(System.Object,Infragistics.WebUI.WebDataInput.ButtonEventArgs)">
+            <summary>
+            提交新的数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:LIMS.Work.SaveFile">
+            <summary>
+            SaveFile 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Work.SaveFile.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Work.Works">
+            <summary>
+            Works 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Work.Works.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Global">
+            <summary>
+            Global 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:LIMS.Global.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LIMS.Global.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.Left">
+            <summary>
+            Left 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.Left.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.WebForm1">
+            <summary>
+            WebForm1 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.WebForm1.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.WebForm2">
+            <summary>
+            WebForm2 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.WebForm2.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.WebForm3">
+            <summary>
+            WebForm3 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.WebForm3.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LIMS.WebForm4">
+            <summary>
+            WebForm4 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:LIMS.WebForm4.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此文件由 XML 架构设计器自动生成。它包含设计器表面组件的布局信息。-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="24702" viewPortTop="-746" zoom="100">
+    <党群机关_XmlElement left="317" top="254" width="5292" height="2963" selected="0" zOrder="12" index="0" expanded="1" />
+    <检校费用_XmlElement left="6243" top="254" width="5292" height="2963" selected="0" zOrder="13" index="1" expanded="1" />
+    <科室_XmlElement left="12169" top="254" width="5292" height="2963" selected="0" zOrder="1" index="2" expanded="1" />
+    <打印委托单_XmlElement left="18095" top="254" width="5292" height="2963" selected="0" zOrder="2" index="3" expanded="1" />
+    <角色权限_XmlElement left="24021" top="1000" width="5292" height="2963" selected="0" zOrder="4" index="4" expanded="1" />
+    <权限模块_XmlElement left="31825" top="1953" width="5292" height="2963" selected="0" zOrder="6" index="5" expanded="1" />
+    <检校任务2_XmlElement left="37751" top="1000" width="5292" height="2963" selected="0" zOrder="14" index="6" expanded="1" />
+    <权限模块角色权限_XmlKeyref left="29379" top="4745" width="503" height="503" selected="0" zOrder="7" />
+</XSDDesignerLayout>
